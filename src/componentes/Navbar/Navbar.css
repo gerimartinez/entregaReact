@@ -1,0 +1,27 @@
+.header {
+    background-color: #3e2d4b;
+   
+}
+.headerLogo {
+    color: whitesmoke;
+}
+.divContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    padding: 20px 0;
+}
+
+.headerNav {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navLink {
+    color: whitesmoke;
+    font-weight: 600;
+
+}
