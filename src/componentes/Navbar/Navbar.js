@@ -6,13 +6,13 @@ export const Navbar = () => {
     return ( 
        <header className="header">
           <div className="divContainer">
-              <h1 className="headerLogo">Armon Studio</h1>
+              <h1 className="headerLogo">ARMON STUDIO</h1>
              
               <nav className="headerNav">
-                    <p className="navLink">Inicio</p>
-                    <p className="navLink">Productos</p>
-                    <p className="navLink">GiftCard</p>
-                    <p className="navLink">Contacto</p>
+                    <p className="navLink">HOME</p>
+                    <p className="navLink">PRODUCTOS</p>
+                    <p className="navLink">GIFTCARD</p>
+                    <p className="navLink">CONTACTO</p>
                     <CartWidget/>
                </nav>
          </div>
