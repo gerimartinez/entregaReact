@@ -1,22 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles.css"
 import { Navbar } from "./componentes/Navbar/Navbar"
-import { ItemListContainer } from "./componentes/ItemListContainer/ItemListContainer";
-import { Counter } from "./ejemplos/Counter/Counter"
+import { useState } from 'react';
+import { ItemListContainer } from './componentes/ItemListContainer/ItemListContainer';
+import ItemCount from "./componentes/ItemCount/ItemCount"
+
 
 function App() {
-
-  const bienvenida = {
-    title: "Bienvenido",
-    texto: "Lentes de sol con onda!"
-    
-  }
-
+  
   return (
     <div className="App">
        <Navbar/>
-       <ItemListContainer texto={bienvenida.texto}/>
-       <Counter/>
+        <ItemCount/>
     </div>
   );
 }

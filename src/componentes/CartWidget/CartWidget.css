@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:wght@200&family=Roboto+Flex:opsz@8..144&display=swap');
+
 .carrito {
-    color: whitesmoke;
+    color:#3e2d4b;
+    font-size: 15px;
+    font-family: "Belleza";
+}
+.carrito:hover {
+    transform: scale(1.2);
+    font-weight: bolder;
 }

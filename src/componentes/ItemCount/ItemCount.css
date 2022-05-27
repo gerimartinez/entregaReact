@@ -1,0 +1,17 @@
+
+.botones-cantidad {
+    display: flex;
+}
+.btn-primary {
+    margin: auto;
+    color: black;
+    background-color: #ebd7fb;
+    border-color: #ebd7fb;
+}
+.btn-primary:hover {
+  background-color: #573375;
+  border-color: #573375;
+}
+.contador {
+    margin: 12px 12px;
+}

@@ -1,0 +1,22 @@
+.footer {
+    background-color: #ebd7fb;
+}
+
+.divContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    padding: 20px 0;
+}
+.footerNav {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.navLinkF {
+    color: #3e2d4b;
+    font-family: "Belleza";
+    font-size: 15px;
+}
