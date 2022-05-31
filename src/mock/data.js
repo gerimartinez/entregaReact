@@ -1,7 +1,9 @@
-export const productos = [
+
+
+const productos = [
     {
         id: 0,
-        imagen: "./imagenes/grow.png",
+        img: "../../imagenes/grow.png",
         nombre: "GROW",
         cantidad: 1,
         maximo: 5,
@@ -9,7 +11,7 @@ export const productos = [
        }, 
        {
         id: 1,
-        imagen: "./imagenes/print.png",
+        img: "../../imagenes/print.png",
         nombre: "PRINT",
         cantidad: 1,
         maximo: 5,
@@ -17,7 +19,7 @@ export const productos = [
        },
        {
         id: 2,
-        imagen: "./imagenes/africa.png",
+        img: "../../imagenes/africa.png",
         nombre: "AFRICA",
         cantidad: 1,
         maximo: 5,
@@ -25,7 +27,7 @@ export const productos = [
        }, 
        {
         id: 3,
-        imagen: "./imagenes/mila.png",
+        img: "../../imagenes/mila.png",
         nombre: "MILA",
         cantidad: 1,
         maximo: 5, 
@@ -33,7 +35,7 @@ export const productos = [
        }, 
        {
         id: 4,
-        imagen: "./imagenes/dolle.png",
+        img: "../../imagenes/dolle.png",
         nombre: "DOLLE",
         cantidad: 1,
         maximo: 5,
@@ -41,7 +43,7 @@ export const productos = [
        }, 
        {
         id: 5,
-        imagen: "./imagenes/estocolmo.png",
+        img: "../../imagenes/estocolmo.png",
         nombre: "ESTOCOLMO",
         cantidad: 1,
         maximo: 5,

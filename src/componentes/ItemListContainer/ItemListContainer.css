@@ -1,0 +1,13 @@
+.divCard {
+    display: flex;
+    align-content: start;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+}
+.imgCard {
+    width: 18rem;
+}
+
+.divInCard {
+    margin: 20px 30px;
+}

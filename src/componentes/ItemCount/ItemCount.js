@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import "./ItemCount.css"
-import Button from 'react-bootstrap/Button'
 
 const ItemCount = () => {
 
@@ -23,7 +22,7 @@ const ItemCount = () => {
 
     return (
         <div className="container my-5">
-            <h2>Counter</h2>
+            
            
             <div className="botones-cantidad">
              <button className="btn btn-primary" onClick={decrementar}>-</button>
