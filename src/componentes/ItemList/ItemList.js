@@ -3,8 +3,7 @@ import Item from "../Item/Item"
 const ItemList = ( {items} ) => {
     return (
         <div className="divCard">
-                     <h2>PRODUCTOS</h2>
-                     <hr/>
+                   
                     {
                         items.map((item) => <Item key={item.id} item={item}/>)
                     } 
@@ -14,3 +13,5 @@ const ItemList = ( {items} ) => {
 }
 
 export default ItemList
+//  <h2 className="h2Productos">PRODUCTOS</h2>
+  //                   <hr/>

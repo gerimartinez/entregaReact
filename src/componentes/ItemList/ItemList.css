@@ -1,0 +1,12 @@
+.h2Productos {
+    margin: 20px 30px;
+
+}
+
+.divCard {
+        display: flex;
+        align-content: start;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: auto;
+}
