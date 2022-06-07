@@ -9,7 +9,7 @@ const ItemCount = () => {
         setContador(contador + 1)
     }
     const decrementar = () => {
-        setContador(contador - 1)
+        contador > 1 && setContador(contador - 1)
     }
   
     useEffect(() => {
@@ -23,12 +23,12 @@ const ItemCount = () => {
     return (
         <div className="container my-5">
             
-           
             <div className="botones-cantidad">
              <button className="btn btn-primary" onClick={decrementar}>-</button>
              <p className="contador">{contador}</p>
              <button className="btn btn-primary" onClick={incrementar}>+</button>
             </div>
+
         </div>
 
     )

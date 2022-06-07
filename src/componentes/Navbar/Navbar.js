@@ -1,20 +1,22 @@
 import "./Navbar.css"
 import { CartWidget } from "../CartWidget/CartWidget"
+import { Link } from "react-router-dom"
 
 export const Navbar = () => {
 
     return ( 
        <header className="header">
           <div className="divContainer">
-              <h1 className="headerLogo">ARMON STUDIO</h1>
+              <img src="./imagenes/armonstudio.png" className="headerLogo"></img>
              
               <nav className="headerNav">
-                    <p className="navLink">HOME</p>
-                    <p className="navLink">PRODUCTOS</p>
-                    <p className="navLink">GIFTCARD</p>
-                    <p className="navLink">CONTACTO</p>
-                    <CartWidget/>
-               </nav>
+                    <Link to={"/"}className="navLink">HOME</Link>
+                    <Link to={"/productos"} className="navLink">PRODUCTOS</Link>
+                    <Link to={"/giftcard"} className="navLink">GIFTCARD</Link>
+                    <Link to={"/contacto"} className="navLink">CONTACTO</Link>
+                    <Link to={"/carrito"} className="navLink"><CartWidget/></Link>
+                    
+               </nav> 
          </div>
      </header>
     )

@@ -13,5 +13,3 @@ const ItemList = ( {items} ) => {
 }
 
 export default ItemList
-//  <h2 className="h2Productos">PRODUCTOS</h2>
-  //                   <hr/>
