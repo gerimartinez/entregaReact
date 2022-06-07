@@ -40,7 +40,7 @@ export const ItemDetailContainer = () => {
                 ?  <Spinner animation="border" role="status">
                      <span className="visually-hidden">Loading...</span>
                   </Spinner>
-                : <ItemDetail items={item}/>
+                : <ItemDetail item={item}/>
             }
             
             
