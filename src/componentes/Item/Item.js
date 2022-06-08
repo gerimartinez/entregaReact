@@ -2,6 +2,7 @@ import "./Item.css"
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import ItemCount from "../ItemCount/ItemCount"
+import { Link } from "react-router-dom"
 
 const Item = ({item}) => {
     return (
@@ -17,7 +18,9 @@ const Item = ({item}) => {
                  ${item.precio}
              </Card.Text>
              <ItemCount/>
-             <Button variant="primary">Shop now</Button>
+             <Link to={`/item/${item.id}`}>
+               <Button variant="primary">Shop now</Button>
+              </Link>
          </Card.Body>
      </Card>
       
