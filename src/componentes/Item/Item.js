@@ -15,7 +15,7 @@ const Item = ({item}) => {
                  Some quick example text to build on the card title and make up the bulk of
                  the card's content.
                  <hr></hr>
-                 ${item.precio}
+                 <strong>${item.precio}</strong>
              </Card.Text>
              <ItemCount/>
              <Link to={`/item/${item.id}`}>

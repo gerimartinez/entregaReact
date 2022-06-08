@@ -7,7 +7,7 @@ export const Navbar = () => {
     return ( 
        <header className="header">
           <div className="divContainer">
-             <img src="./imagenes/armonstudio.png" className="headerLogo"></img>
+             <img src="/imagenes/armonstudio.png" className="headerLogo"></img>
              
               <nav className="headerNav">
                     <Link to={"/"}className="navLink">HOME</Link>
