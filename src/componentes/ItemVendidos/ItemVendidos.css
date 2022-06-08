@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:wght@200&family=Roboto+Flex:opsz@8..144&display=swap');
+
+
+.vendidoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+
+}
+.prodCard {
+    margin: auto;
+    padding: 15px 15px;
+}
+.imgVendidos {
+    width: 20em;
+}
+h1 {
+    font-family: "Belleza";
+    text-align: center;
+    margin: auto;
+    padding: 20px 20px;
+}
+h2 {
+    font-size: 1em
+}

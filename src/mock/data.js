@@ -3,7 +3,7 @@
 const productos = [
     {
         id: 0,
-        img: "./imagenes/grow.png",
+        img: "/imagenes/grow.png",
         nombre: "GROW",
         cantidad: 1,
         maximo: 5,
@@ -11,7 +11,7 @@ const productos = [
        }, 
        {
         id: 1,
-        img: "./imagenes/print.png",
+        img: "/imagenes/print.png",
         nombre: "PRINT",
         cantidad: 1,
         maximo: 5,
@@ -19,7 +19,7 @@ const productos = [
        },
        {
         id: 2,
-        img: "./imagenes/africa.png",
+        img: "/imagenes/africa.png",
         nombre: "AFRICA",
         cantidad: 1,
         maximo: 5,
@@ -27,7 +27,7 @@ const productos = [
        }, 
        {
         id: 3,
-        img: "./imagenes/mila.png",
+        img: "/imagenes/mila.png",
         nombre: "MILA",
         cantidad: 1,
         maximo: 5, 
@@ -35,7 +35,7 @@ const productos = [
        }, 
        {
         id: 4,
-        img: "./imagenes/dolle.png",
+        img: "/imagenes/dolle.png",
         nombre: "DOLLE",
         cantidad: 1,
         maximo: 5,
@@ -43,11 +43,11 @@ const productos = [
        }, 
        {
         id: 5,
-        img: "./imagenes/estocolmo.png",
+        img: "/imagenes/estocolmo.png",
         nombre: "ESTOCOLMO",
         cantidad: 1,
         maximo: 5,
         precio: 2550
-       }, 
+       }
 ]
 export default productos

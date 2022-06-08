@@ -18,7 +18,7 @@ function App() {
        <Navbar/>
 
         <Routes>
-           <Route path='/' element={<Home/>}/>
+           <Route path='/' element={<ItemVendidos/>}/>
            <Route path='/productos' element={ <ItemListContainer/> }/>
            <Route path='/categorias/:categoryId' element={ <ItemListContainer/> }/>
            <Route path='/item/:itemId' element={ <ItemDetailContainer/> } />
@@ -26,7 +26,7 @@ function App() {
            <Route path='/contacto' element={<Contacto/>}/>
            <Route path='*' element={ <Navigate to={"/"}/> } />
         </Routes>
-                 
+
     </BrowserRouter>
    
   );

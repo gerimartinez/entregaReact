@@ -1,11 +1,9 @@
 import "./Home.css"
 import Carousel from 'react-bootstrap/Carousel'
-import ItemVendidos from "../ItemVendidos/ItemVendidos"
 
 export const Home = () => {
     return (
-        <Carousel className="contCarousel">
-          <ItemVendidos/>  
+        <Carousel className="contCarousel"> 
           <Carousel.Item>
              <img
                  className="d-block w-100 imgCarousel"
