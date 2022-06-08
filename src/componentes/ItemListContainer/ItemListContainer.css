@@ -3,6 +3,7 @@
     align-content: start;
     flex-wrap: wrap;
     margin: 10px 10px;
+    background-color: #B2A8B8;
 }
 .imgCard {
     width: 18rem;

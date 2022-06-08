@@ -3,7 +3,7 @@ import "./ItemCount.css"
 
 const ItemCount = () => {
 
-    const [contador = 0, setContador] = useState(0)
+    const [contador = 1, setContador] = useState(1)
     
     const incrementar = () => {
         setContador(contador + 1)

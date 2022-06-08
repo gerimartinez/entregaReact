@@ -3,13 +3,13 @@
     display: flex;
 }
 .btn-primary {
-    color: black;
-    background-color: #ebd7fb;
-    border-color: #ebd7fb;
+    color: azure;
+    background-color: #3e2d4b;
+    border-color: #3e2d4b;
 }
 .btn-primary:hover {
-  background-color: #573375;
-  border-color: #573375;
+  background-color: #ebd7fb;
+  border-color: #ebd7fb;
 }
 .contador {
     margin: 12px 12px;

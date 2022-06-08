@@ -5,14 +5,30 @@
 
 .header {
     background-color: #ebd7fb;
+    
    
 }
 .headerLogo {
-    color: #3e2d4b;
-    font-family: "Belleza";
-    width: 8em;
-    margin: 10px;
+    width: 7em;
+    
 }
+.headerLogo {
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .headerLogo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 .divContainer {
     display: flex;
     justify-content: space-between;
@@ -38,4 +54,5 @@
 .navLink:hover {
     transform: scale(1.2);
     font-weight: bolder;
+    color: black;
 }

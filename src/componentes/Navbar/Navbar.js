@@ -10,7 +10,7 @@ export const Navbar = () => {
              <img src="/imagenes/armonstudio.png" className="headerLogo"></img>
              
               <nav className="headerNav">
-                    <Link to={"/"}className="navLink">HOME</Link>
+                    <Link to={"/"} className="navLink">HOME</Link>
                     <Link to={"/productos"} className="navLink">PRODUCTOS</Link>
                     <Link to={"/giftcard"} className="navLink">GIFTCARD</Link>
                     <Link to={"/contacto"} className="navLink">CONTACTO</Link>
