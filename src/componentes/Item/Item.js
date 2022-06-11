@@ -17,9 +17,8 @@ const Item = ({item}) => {
                  <hr></hr>
                  <strong>${item.precio}</strong>
              </Card.Text>
-             <ItemCount/>
              <Link to={`/item/${item.id}`}>
-               <Button variant="primary">Shop now</Button>
+               <Button className="btn btn-primary mx-3">Shop now</Button>
               </Link>
          </Card.Body>
      </Card>

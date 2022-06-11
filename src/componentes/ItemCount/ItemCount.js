@@ -1,32 +1,26 @@
-import { useState, useEffect } from "react"
 import "./ItemCount.css"
+import Button from "react-bootstrap/esm/Button"
 
-const ItemCount = () => {
+const ItemCount = ( {max, setContador, contador, onAdd} ) => {
 
-    const [contador = 1, setContador] = useState(1)
     
-    const incrementar = () => {
-        setContador(contador + 1)
+    const handleSumar = () => {
+        contador < max && setContador(contador + 1)
     }
-    const decrementar = () => {
+    const handleRestar = () => {
         contador > 1 && setContador(contador - 1)
     }
-  
-    useEffect(() => {
-        console.log("Montaje")
-
-        return () => {
-            console.log("Desmontaje")
-        }
-    }, [])
+    
 
     return (
-        <div className="container my-5">
+        <div className="my-3 buttons">
             
             <div className="botones-cantidad">
-             <button className="btn btn-primary" onClick={decrementar}>-</button>
-             <p className="contador">{contador}</p>
-             <button className="btn btn-primary" onClick={incrementar}>+</button>
+             <button onClick={handleRestar} className="btn btn-primary" >-</button>
+             <span className="contador">{contador}</span>
+             <button onClick={handleSumar} className="btn btn-primary" >+</button>
+             
+             <Button onClick={onAdd} className="btn btn-primary mx-3">Añadir al carrito</Button>
             </div>
 
         </div>

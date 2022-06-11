@@ -1,12 +1,13 @@
 import "./ItemVendidos.css"
 import Button from 'react-bootstrap/Button'
 import Carousel from 'react-bootstrap/Carousel'
+import { Link } from "react-router-dom"
 
 
 export const ItemVendidos = () => {
     return(
        <section>
-           <h6>// ARMON STUDIO // ARMON STUDIO // ARMON STUDIO // ARMON STUDIO // ARMON STUDIO // ARMON STUDIO // ARMON STUDIO // ARMON STUDIO // ARMON STU</h6>
+           <h6>// COOLEST SUNGLASSES IN TOWN // COOLEST SUNGLASSES IN TOWN // COOLEST SUNGLASSES IN TOWN  // COOLEST SUNGLASSES IN TOWN  // COOLEST SUNGLASSES // </h6>
          <Carousel className="contCarousel"> 
                 <Carousel.Item>
                     <img
@@ -50,21 +51,30 @@ export const ItemVendidos = () => {
                     <h2>Mila</h2>
                     <hr/>
                     <p className="precioProd">$3500</p>
-                    <Button variant="primary" className="btnShop">Shop now</Button>
+                    <Link to={`/productos`}>
+                        <Button variant="primary" className="btnShop">Shop now</Button>
+                    </Link>
+                    
               </div>
                 <div className="prodCard">
                     <img src="./imagenes/dolle.png" className="imgVendidos"></img>
                     <h2>Dolle</h2>
                     <hr/>
                     <p className="precioProd">$3200</p>
-                    <Button variant="primary" className="btnShop">Shop now</Button>
+                    <Link to={`/productos`}>
+                        <Button variant="primary" className="btnShop">Shop now</Button>
+                    </Link>
+                    
                 </div>
                 <div className="prodCard">
                     <img src="./imagenes/estocolmo.png" className="imgVendidos"></img>
                     <h2>Estocolmo</h2>
                     <hr/>
                     <p className="precioProd">$2800</p>
-                    <Button variant="primary" className="btnShop">Shop now</Button>
+                    <Link to={`/productos`}>
+                        <Button variant="primary" className="btnShop">Shop now</Button>
+                    </Link>
+                    
                 </div>
          </div>
        </section> 

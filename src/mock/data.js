@@ -6,7 +6,7 @@ const productos = [
         img: "/imagenes/grow.png",
         nombre: "GROW",
         cantidad: 1,
-        maximo: 5,
+        max: 7,
         precio: 1980
        }, 
        {
@@ -14,7 +14,7 @@ const productos = [
         img: "/imagenes/print.png",
         nombre: "PRINT",
         cantidad: 1,
-        maximo: 5,
+        max: 5,
         precio: 2500
        },
        {
@@ -22,7 +22,7 @@ const productos = [
         img: "/imagenes/africa.png",
         nombre: "AFRICA",
         cantidad: 1,
-        maximo: 5,
+        max: 5,
         precio: 2450
        }, 
        {
@@ -30,7 +30,7 @@ const productos = [
         img: "/imagenes/mila.png",
         nombre: "MILA",
         cantidad: 1,
-        maximo: 5, 
+        max: 15, 
         precio: 2450
        }, 
        {
@@ -38,7 +38,7 @@ const productos = [
         img: "/imagenes/dolle.png",
         nombre: "DOLLE",
         cantidad: 1,
-        maximo: 5,
+        max: 8,
         precio: 2230
        }, 
        {
@@ -46,7 +46,7 @@ const productos = [
         img: "/imagenes/estocolmo.png",
         nombre: "ESTOCOLMO",
         cantidad: 1,
-        maximo: 5,
+        max: 5,
         precio: 2550
        }
 ]
