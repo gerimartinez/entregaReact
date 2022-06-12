@@ -4,15 +4,21 @@ import ListGroupItem from 'react-bootstrap/ListGroupItem'
 import ListGroup from 'react-bootstrap/ListGroup'
 import ItemCount from "../ItemCount/ItemCount"
 import Button from 'react-bootstrap/Button'
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { useNavigate } from "react-router-dom"
+import { CartContext } from "../context/CartContext"
 
 
 
 export const ItemDetail = ({item}) => {
 
+    const {addItem} = useContext(CartContext)
+    
+
     const [cantidad, setCantidad] = useState(1)
+
     const navigate = useNavigate()
+
     const handleVolver = () => {
         navigate(-1)
     }
@@ -22,7 +28,7 @@ export const ItemDetail = ({item}) => {
             ...item,
             cantidad
         }
-        console.log(itemToCart)
+        addItem(itemToCart)
     }
 
     return(

@@ -7,7 +7,8 @@ const productos = [
         nombre: "GROW",
         cantidad: 1,
         max: 7,
-        precio: 1980
+        precio: 1980,
+        categoria: "negro"
        }, 
        {
         id: 1,
@@ -15,7 +16,8 @@ const productos = [
         nombre: "PRINT",
         cantidad: 1,
         max: 5,
-        precio: 2500
+        precio: 2500,
+        categoria: "carey"
        },
        {
         id: 2,
@@ -23,7 +25,8 @@ const productos = [
         nombre: "AFRICA",
         cantidad: 1,
         max: 5,
-        precio: 2450
+        precio: 2450,
+        categoria: "negro"
        }, 
        {
         id: 3,
@@ -31,7 +34,8 @@ const productos = [
         nombre: "MILA",
         cantidad: 1,
         max: 15, 
-        precio: 2450
+        precio: 2450,
+        categoria: "carey"
        }, 
        {
         id: 4,
@@ -39,7 +43,8 @@ const productos = [
         nombre: "DOLLE",
         cantidad: 1,
         max: 8,
-        precio: 2230
+        precio: 2230,
+        categoria: "negro"
        }, 
        {
         id: 5,
@@ -47,7 +52,8 @@ const productos = [
         nombre: "ESTOCOLMO",
         cantidad: 1,
         max: 5,
-        precio: 2550
+        precio: 2550,
+        categoria: "carey"
        }
 ]
 export default productos

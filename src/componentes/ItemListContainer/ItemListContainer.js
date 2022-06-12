@@ -1,38 +1,49 @@
 import "./ItemListContainer.css"
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Spinner from 'react-bootstrap/Spinner'
 import { pedirDatos } from "../../mock/pedirDatos"
 import ItemList from "../ItemList/ItemList"
-
+import { useParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 export const ItemListContainer = () => {
-    
+  
+
+
    const [items, setItems] = useState([])
    const [loading, setLoading] = useState(true)
+
+   const { categoryId } = useParams()
 
     useEffect(() => {
         setLoading(true)
 
         pedirDatos(true)
             .then((resp) => {
-              setItems(resp)
-              setLoading(false)
+              if (!categoryId) {
+                setItems(resp)
+              } else {
+                setItems(resp.filter((item) => item.categoria === categoryId))
+              }
+              
             })
             .catch((error) => {
               console.log("error, ", error)
-              setLoading(false)
             })
             .finally(() => {
                 setLoading(false)
             })
     
-    }, [])
+    }, [categoryId])
 
         
     return (
         <section className="container my-5">
-      
+            <nav className="headerNav">
+                    <Link to={"/categorias/negro"} className="navLink">Negro</Link>
+                    <Link to={"/categorias/carey"} className="navLink">Carey</Link>
+             </nav>
             {
                 loading
                 ?  <Spinner animation="border" role="status">
