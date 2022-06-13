@@ -5,15 +5,15 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import ItemCount from "../ItemCount/ItemCount"
 import Button from 'react-bootstrap/Button'
 import { useContext, useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { CartContext } from "../context/CartContext"
 
 
 
 export const ItemDetail = ({item}) => {
 
-    const {addItem} = useContext(CartContext)
-    
+    const {addItem, isInCart} = useContext(CartContext)
+    console.log(isInCart(item.id))
 
     const [cantidad, setCantidad] = useState(1)
 
@@ -33,10 +33,10 @@ export const ItemDetail = ({item}) => {
 
     return(
         <section>
-          <Card border="light"  className="card">
+          <Card border="light"  className="cardDetail">
              <Card.Img variant="top" src={item.img}/>
-                <Card.Body>
-                    <Card.Title className="cardTitle">{item.nombre}</Card.Title>
+                <Card.Body className="cardBody-Detail">
+                    <Card.Title className="cardTitleDetail">{item.nombre}</Card.Title>
                     <Card.Text className="cardDefine">
                         DEFINE YOUR LOOK
                     </Card.Text>
@@ -46,14 +46,19 @@ export const ItemDetail = ({item}) => {
                     <ListGroupItem className="cardText">Ultra livianos</ListGroupItem>
                     <ListGroupItem className="cardPrecio">${item.precio}</ListGroupItem>
                 </ListGroup>
-                <Card.Body>
-                    {/*<Card.Link href="#">Card Link</Card.Link>*/}
-                    <ItemCount
-                        max={item.max}
-                        contador={cantidad}
-                        setContador={setCantidad}
-                        onAdd={handleAgregar}
-                    />
+                <Card.Body className="cardBody-Detail">
+                    {
+                        isInCart(item.id)
+                        ? <Link to="/cart" className="btn btn-primary my-3 btnVolver">Finalizar compra</Link>
+                        :
+                            <ItemCount
+                                max={item.max}
+                                contador={cantidad}
+                                setContador={setCantidad}
+                                onAdd={handleAgregar}
+                            />
+                    }
+                   
                 </Card.Body>
            </Card>
            <Button onClick={handleVolver} className="btnVolver">Volver</Button>

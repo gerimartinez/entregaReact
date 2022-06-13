@@ -1,13 +1,15 @@
 .card {
-    margin: 5px auto;
-    padding-bottom: 1rem;
+    margin: 1.7em auto;
+    border: #4f4b51;
 }
-
+.card-body {
+    background-color: #B2A8B8;
+}
 .card-Title {
     font-family: "Belleza";
     font-size: 2em;
     text-align: center;
-    color: #4C4352;
+    color: azure;
 
 }
 
@@ -15,7 +17,7 @@
     font-family: "Belleza";
     font-size: 1.3em;
     text-align: center;
-    color: #4C4352;
+    color: azure;
 
 }
 
@@ -23,7 +25,8 @@
     font-family: "Belleza";
     font-size: 1.7em;
     text-align: center;
-    color: #4C4352;
+    color: azure;
+    letter-spacing: 0.1em;
     display: flex;
     justify-content: center;
 

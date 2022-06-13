@@ -5,8 +5,13 @@
     color:#3e2d4b;
     font-size: 15px;
     font-family: "Belleza";
+    text-decoration: none;
 }
 .carrito:hover {
-    transform: scale(1.2);
+    transform: scale(1);
     font-weight: bolder;
+}
+
+.linkCarrito {
+    text-decoration: none;
 }

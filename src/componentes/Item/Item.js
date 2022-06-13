@@ -7,9 +7,9 @@ import { Link } from "react-router-dom"
 const Item = ({item}) => {
     return (
        
-      <Card border="light" style={{ width: '18rem' }} className="card">
+      <Card style={{ width: '18rem' }} className="card">
          <Card.Img variant="top" src={item.img}/>
-         <Card.Body>
+         <Card.Body className="card-body">
              <Card.Title className="card-Title">{item.nombre}</Card.Title>
              <Card.Text className="card-Text">
                  <hr></hr>

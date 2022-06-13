@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:wght@200&family=Roboto+Flex:opsz@8..144&display=swap');
 
-.card {
+.cardDetail {
     width: 25rem;
 }
-.cardTitle {
+.cardTitleDetail {
     font-family: "Belleza";
     font-size: 2.7em;
     text-align: center;
     color: #4C4352;
 
+}
+.cardBody-Detail {
+    background-color: white;
 }
 
 .cardText {

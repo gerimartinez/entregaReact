@@ -60,6 +60,7 @@ export const ItemListContainer = () => {
                         </Dropdown.Item>
                     </Dropdown.Menu>
               </Dropdown>
+              
             {
                 loading
                 ?  <Spinner animation="border" role="status">

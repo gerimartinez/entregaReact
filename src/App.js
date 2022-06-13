@@ -8,23 +8,17 @@ import { ItemListContainer } from './componentes/ItemListContainer/ItemListConta
 import { ItemDetailContainer } from './componentes/ItemDetailContainer/ItemDetailContainer';
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom"
 import ItemVendidos from './componentes/ItemVendidos/ItemVendidos';
-import { CartContext } from './componentes/context/CartContext';
+import { CartContext, CartProvider } from './componentes/context/CartContext';
 import { useState } from 'react';
+import Cart from './componentes/Cart/Cart';
 
 
 
 function App() {
 
-  const [cart, setCart] = useState([])
-  console.log(cart)
-
-  const addItem = (item) => {
-    setCart ( [...cart, item] )
-  }
-
+  
   return (
-   <CartContext.Provider value={ {cart, addItem} }>
-
+    <CartProvider>
       <BrowserRouter>
 
         <Navbar/>
@@ -34,6 +28,7 @@ function App() {
             <Route path='/productos' element={ <ItemListContainer/> }/>
             <Route path='/categorias/:categoryId' element={ <ItemListContainer/> }/>
             <Route path='/item/:itemId' element={ <ItemDetailContainer/> } />
+            <Route path='/cart' element={<Cart/>} />
             <Route path='/giftcard' element={<GiftCard/>}/>
             <Route path='/contacto' element={<Contacto/>}/>
             <Route path='*' element={ <Navigate to={"/"}/> } />
@@ -41,8 +36,8 @@ function App() {
 
           <Footer/>
       </BrowserRouter>
-
-   </CartContext.Provider>
+    </CartProvider>
+  
   );
 }
 
