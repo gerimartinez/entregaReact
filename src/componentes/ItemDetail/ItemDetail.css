@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:wght@200&family=Roboto+Flex:opsz@8..144&display=swap');
+
+.card {
+    width: 25rem;
+}
+.cardTitle {
+    font-family: "Belleza";
+    font-size: 2.7em;
+    text-align: center;
+    color: #4C4352;
+
+}
+
+.cardText {
+    font-family: "Belleza";
+    font-size: 1.3em;
+    text-align: center;
+    color: #4C4352;
+
+}
+
+.cardDefine {
+    font-family: "Belleza";
+    font-size: 1.7em;
+    text-align: center;
+    color: #4C4352;
+
+}
+
+.cardPrecio {
+    font-family: "Belleza";
+    font-size: 2em;
+    text-align: center;
+    color: #4C4352;
+
+
+}
+
+.btnVolver {
+    font-family: "Belleza";
+    background-color: #D3AFEA;
+    border-color: #D3AFEA;
+    width: 6em;
+
+}

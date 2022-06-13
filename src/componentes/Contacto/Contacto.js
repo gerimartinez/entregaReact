@@ -30,6 +30,7 @@ export const Contacto = () => {
         <div className="container my-5">
             <h2>Contacto</h2>
             <hr/>
+            
 
             <form onSubmit={handleSubmit}>
                 <h4>Login</h4>

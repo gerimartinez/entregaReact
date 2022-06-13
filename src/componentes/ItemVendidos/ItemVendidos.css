@@ -13,6 +13,9 @@
 .prodCard {
     margin: auto;
     padding: 15px 15px;
+    padding-bottom: 10em;
+    padding-top: 4em;
+
 }
 .imgVendidos {
     width: 20em;
@@ -23,6 +26,7 @@ h1 {
     margin: auto;
     padding: 50px 20px;
     color: azure;
+    padding-top: 4em;
 }
 h2 {
     font-size: 1.5em;
@@ -32,7 +36,7 @@ h2 {
 }
 
 h6 {
-    color: #3e2d4b;
+    color: #B2A8B8;
    
 }
 
@@ -50,4 +54,9 @@ h6 {
     color: azure;
     background-color: #3e2d4b;
     border-color: #3e2d4b;
+    text-decoration:none;
+}
+
+.btnShop:hover {
+    text-decoration:none;
 }

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:wght@200&family=Roboto+Flex:opsz@8..144&display=swap');
+
+
+.imgGiftcard {
+    width: 37rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+     margin-right: auto;
+}
+
+.containerGif {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.h3Gif {
+    font-family: "Belleza";
+    font-size: 2em;
+    padding: 10px auto;
+}
+
+.detalleGif {
+    font-family: "Belleza";
+    font-size: 1.2em;
+    padding: 20px 20px;
+}

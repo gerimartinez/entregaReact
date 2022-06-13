@@ -12,3 +12,33 @@
 .divInCard {
     margin: 20px 30px;
 }
+
+.navLink-categorias {
+    color: #4C4352;;
+    font-family: "Belleza";
+    font-size: 1.3em;
+    padding-bottom: 2em;
+    padding: 10px 10px;
+    text-decoration:none;
+} 
+
+.navLink-categorias:hover {
+    transform: scale(1.2);
+    font-weight: bolder;
+    color: #4C4352;
+}
+
+.headerNav-Cat {
+    padding-bottom: 2em;
+}
+
+.btncategorias {
+    padding: 10px auto;
+    
+}
+
+.contDropdown {
+    padding: 2em 1em;
+    margin: 10px auto;
+    padding-bottom: 3em;
+}

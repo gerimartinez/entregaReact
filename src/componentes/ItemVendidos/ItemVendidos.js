@@ -51,7 +51,7 @@ export const ItemVendidos = () => {
                     <h2>Mila</h2>
                     <hr/>
                     <p className="precioProd">$3500</p>
-                    <Link to={`/productos`}>
+                    <Link to={`/productos`} className="contBoton">
                         <Button variant="primary" className="btnShop">Shop now</Button>
                     </Link>
                     
@@ -61,7 +61,7 @@ export const ItemVendidos = () => {
                     <h2>Dolle</h2>
                     <hr/>
                     <p className="precioProd">$3200</p>
-                    <Link to={`/productos`}>
+                    <Link to={`/productos`} className="contBoton">
                         <Button variant="primary" className="btnShop">Shop now</Button>
                     </Link>
                     
@@ -71,7 +71,7 @@ export const ItemVendidos = () => {
                     <h2>Estocolmo</h2>
                     <hr/>
                     <p className="precioProd">$2800</p>
-                    <Link to={`/productos`}>
+                    <Link to={`/productos`} className="contBoton">
                         <Button variant="primary" className="btnShop">Shop now</Button>
                     </Link>
                     

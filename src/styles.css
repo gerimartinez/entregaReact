@@ -1,3 +1,58 @@
 body {
     background-color: #B2A8B8;
 }
+
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/*Mobile*/
+@media only screen and (min-width: 310px) and (max-width: 500px) {
+    /*Navbar*/
+    .headerLogo {
+        width: 2em;
+        
+    }
+    .divContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .headerNav {
+        display: flex;
+        width: 20%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .navLink {
+        color: #4C4352;;
+        font-family: "Belleza";
+        font-size: 15px;
+        text-decoration:none;
+    }
+    
+    .navLink:hover {
+        transform: scale(1.2);
+        font-weight: bolder;
+        color: #4C4352;
+    }
+    /*Fin Navbar*/
+
+    /*Home*/
+    .vendidoContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 1100px;
+        margin: auto;   
+    }
+
+    /*Item Detail*/
+    .card {
+        width: 10em;
+    }
+}

@@ -10,15 +10,13 @@ const Item = ({item}) => {
       <Card border="light" style={{ width: '18rem' }} className="card">
          <Card.Img variant="top" src={item.img}/>
          <Card.Body>
-             <Card.Title>{item.nombre}</Card.Title>
-             <Card.Text>
-                 Some quick example text to build on the card title and make up the bulk of
-                 the card's content.
+             <Card.Title className="card-Title">{item.nombre}</Card.Title>
+             <Card.Text className="card-Text">
                  <hr></hr>
-                 <strong>${item.precio}</strong>
+                 <strong className="card-Precio">${item.precio}</strong>
              </Card.Text>
-             <Link to={`/item/${item.id}`}>
-               <Button className="btn btn-primary mx-3">Shop now</Button>
+             <Link to={`/item/${item.id}`} className="contBoton">
+               <Button className="btn btn-primary mx-3 bg-geri">Shop now</Button>
               </Link>
          </Card.Body>
      </Card>

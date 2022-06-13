@@ -5,6 +5,7 @@ import { pedirDatos } from "../../mock/pedirDatos"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
+import Dropdown from 'react-bootstrap/Dropdown'
 
 
 export const ItemListContainer = () => {
@@ -40,10 +41,25 @@ export const ItemListContainer = () => {
         
     return (
         <section className="container my-5">
-            <nav className="headerNav">
-                    <Link to={"/categorias/negro"} className="navLink">Negro</Link>
-                    <Link to={"/categorias/carey"} className="navLink">Carey</Link>
-             </nav>
+              <Dropdown className="contDropdown">
+                    <Dropdown.Toggle id="dropdown-basic" className="btncategorias">
+                      Categorias
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                       <Dropdown.Item href="#/action-1">
+                          <Link to={"/productos"} className="navLink-categorias">Todos</Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-1">
+                          <Link to={"/categorias/negro"} className="navLink-categorias">Negro</Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">
+                        <Link to={"/categorias/carey"} className="navLink-categorias">Carey</Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">
+                          <Link to={"/categorias/colores"} className="navLink-categorias">Colores</Link>
+                        </Dropdown.Item>
+                    </Dropdown.Menu>
+              </Dropdown>
             {
                 loading
                 ?  <Spinner animation="border" role="status">

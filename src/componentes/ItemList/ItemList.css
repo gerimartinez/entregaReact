@@ -8,5 +8,6 @@
         align-content: start;
         flex-wrap: wrap;
         margin: auto;
-        padding: auto;
+        padding: 1em 2em;
+        
 }

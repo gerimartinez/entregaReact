@@ -46,13 +46,14 @@
 }
 
 .navLink {
-    color: #3e2d4b;
+    color: #4C4352;;
     font-family: "Belleza";
     font-size: 15px;
+    text-decoration:none;
 }
 
 .navLink:hover {
     transform: scale(1.2);
     font-weight: bolder;
-    color: black;
+    color: #4C4352;
 }

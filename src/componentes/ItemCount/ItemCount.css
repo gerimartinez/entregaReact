@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:wght@200&family=Roboto+Flex:opsz@8..144&display=swap');
+
 
 .botones-cantidad {
     display: flex;
+    font-family: "Belleza";
+    justify-content: center;
+
 }
 .btn-primary {
     color: azure;
-    background-color: #3e2d4b;
-    border-color: #3e2d4b;
+    background-color: #D3AFEA;
+    border-color: #D3AFEA;
+    font-family: "Belleza";
+
 }
 .btn-primary:hover {
   background-color: #ebd7fb;
@@ -13,4 +20,6 @@
 }
 .contador {
     margin: 12px 12px;
+    font-family: "Belleza";
+
 }

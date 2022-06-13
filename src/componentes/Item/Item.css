@@ -1,4 +1,52 @@
 .card {
     margin: 5px auto;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
+}
+
+.card-Title {
+    font-family: "Belleza";
+    font-size: 2em;
+    text-align: center;
+    color: #4C4352;
+
+}
+
+.cardText {
+    font-family: "Belleza";
+    font-size: 1.3em;
+    text-align: center;
+    color: #4C4352;
+
+}
+
+.card-Precio {
+    font-family: "Belleza";
+    font-size: 1.7em;
+    text-align: center;
+    color: #4C4352;
+    display: flex;
+    justify-content: center;
+
+}
+
+.btnVolver {
+    font-family: "Belleza";
+    background-color: #D3AFEA;
+    border-color: #D3AFEA;
+    width: 6em;
+
+}
+.bg-geri {
+    width: 7em;
+    margin: 10px 10px;
+   
+    font-size: 1.2em;
+    
+}
+
+.contBoton {
+    display: flex;
+    justify-content: center;
+    color: #D3AFEA;
+    text-decoration:none;
 }

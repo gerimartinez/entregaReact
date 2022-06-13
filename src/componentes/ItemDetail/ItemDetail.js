@@ -33,18 +33,18 @@ export const ItemDetail = ({item}) => {
 
     return(
         <section>
-          <Card style={{ width: '18rem' }} className="card">
+          <Card border="light"  className="card">
              <Card.Img variant="top" src={item.img}/>
                 <Card.Body>
-                    <Card.Title>{item.nombre}</Card.Title>
-                    <Card.Text>
+                    <Card.Title className="cardTitle">{item.nombre}</Card.Title>
+                    <Card.Text className="cardDefine">
                         DEFINE YOUR LOOK
                     </Card.Text>
                 </Card.Body>
                 <ListGroup className="list-group-flush">
-                    <ListGroupItem>Proteccion UV 400</ListGroupItem>
-                    <ListGroupItem>Ultra livianos</ListGroupItem>
-                    <ListGroupItem>${item.precio}</ListGroupItem>
+                    <ListGroupItem className="cardText">Proteccion UV 400</ListGroupItem>
+                    <ListGroupItem className="cardText">Ultra livianos</ListGroupItem>
+                    <ListGroupItem className="cardPrecio">${item.precio}</ListGroupItem>
                 </ListGroup>
                 <Card.Body>
                     {/*<Card.Link href="#">Card Link</Card.Link>*/}
@@ -56,7 +56,7 @@ export const ItemDetail = ({item}) => {
                     />
                 </Card.Body>
            </Card>
-           <button onClick={handleVolver} className="btnShop">Volver</button>
+           <Button onClick={handleVolver} className="btnVolver">Volver</Button>
         </section>
         
     )
