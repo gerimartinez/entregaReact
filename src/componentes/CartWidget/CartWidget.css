@@ -7,11 +7,15 @@
     font-family: "Belleza";
     text-decoration: none;
 }
-.carrito:hover {
-    transform: scale(1);
+.linkCarrito:hover {
+    transform: scale(1.5);
     font-weight: bolder;
+    color: #3e2d4b;;
 }
 
 .linkCarrito {
     text-decoration: none;
+    color:#3e2d4b;
+    font-size: 1.5em;
+
 }

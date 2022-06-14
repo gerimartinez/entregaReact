@@ -46,3 +46,11 @@
     width: 6em;
 
 }
+.btnFinalizar {
+    margin: 15px;
+    padding: 10px 10px;
+}
+.btnSeguir {
+    margin: 15px auto;
+    padding: 10px 10px;
+}

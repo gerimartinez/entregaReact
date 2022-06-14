@@ -49,7 +49,8 @@ export const ItemDetail = ({item}) => {
                 <Card.Body className="cardBody-Detail">
                     {
                         isInCart(item.id)
-                        ? <Link to="/cart" className="btn btn-primary my-3 btnVolver">Finalizar compra</Link>
+                        ? <Link to="/cart" className="btn btn-primary my-5 btnFinalizar">Finalizar compra</Link>
+                         
                         :
                             <ItemCount
                                 max={item.max}
@@ -58,7 +59,7 @@ export const ItemDetail = ({item}) => {
                                 onAdd={handleAgregar}
                             />
                     }
-                   
+                 <Link to="/productos" className="btn btn-primary btnSeguir">Seguir comprando</Link>  
                 </Card.Body>
            </Card>
            <Button onClick={handleVolver} className="btnVolver">Volver</Button>

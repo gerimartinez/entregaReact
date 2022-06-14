@@ -1,6 +1,7 @@
+import "./Cart.css"
 import { useCartContext } from "../context/CartContext"
-import Table from 'react-bootstrap/Table'
 import { HiOutlineTrash } from "react-icons/hi"
+import { Link } from "react-router-dom"
 
 const Cart = () => {
 
@@ -13,29 +14,38 @@ const Cart = () => {
 
             {
                 cart.map((item) => (
-                    <Table striped bordered hover size="sm" key={item.id}>
-                        <thead>
-                            <tr>
-                                <th>Producto</th>
-                                <th>Cantidad</th>
-                                <th>Precio</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>{item.nombre}</td>
-                                <td>{item.cantidad}</td>
-                                <td>{item.precio * item.cantidad}</td>
+                    <section className="divContCart">
+                      <div className="row mb-4 d-flex justify-content-between align-items-center" key={item.id}>
+                            <div className="col-md-2 col-lg-2 col-xl-2">
+                                <img
+                                src={item.img} className="imgCart"/>
+                            </div>
+                            <div class="col-md-3 col-lg-3 col-xl-3">
+                                <h6 className="text-muted">Modelo: {item.nombre}</h6>
+                                <h6 className="text-black mb-0">Cantidad: {item.cantidad}</h6>
+                            </div>
+                            <div className="col-md-3 col-lg-3 col-xl-2 d-flex"> 
+                               ${item.precio}
+                            </div>
+                            <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                <h6 className="mb-0">${item.precio * item.cantidad}</h6>
+                            </div>
+                            <div className="col-md-1 col-lg-1 col-xl-1 text-end">
+                                <a href="#!" className="text-muted"><i className="fas fa-times"></i></a>
                                 <button onClick={() => removeItem(item.id)} className="btn btn-danger"><HiOutlineTrash/></button>
-                            </tr>
-                        </tbody>
-                    </Table>
+                          </div>
+                        </div>
+                     <hr className="my-4"/>
+                    
+                  </section>   
                     
                 ))
             }
 
            <h2>Total: ${totalPrice()}</h2>
            <button className="btn btn-primary btnShop" onClick={emptyCart}>Vaciar carrito</button>
+           <Link to="/productos" className="btn btn-primary btnSeguir">Seguir comprando</Link>  
+           
         </div>
     )
 }
