@@ -38,38 +38,41 @@ export const ItemListContainer = () => {
     
     }, [categoryId])
 
+    if (loading) {
+      return (
+        <section>
+          <Spinner animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </Spinner>
+        </section>
+      )
+    }
         
     return (
         <section className="container my-5">
-              <Dropdown className="contDropdown">
-                    <Dropdown.Toggle id="dropdown-basic" className="btncategorias">
-                      Categorias
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                       <Dropdown.Item href="#/action-1">
-                          <Link to={"/productos"} className="navLink-categorias">Todos</Link>
-                        </Dropdown.Item>
-                        <Dropdown.Item href="#/action-1">
-                          <Link to={"/categorias/negro"} className="navLink-categorias">Negro</Link>
-                        </Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">
-                        <Link to={"/categorias/carey"} className="navLink-categorias">Carey</Link>
-                        </Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">
-                          <Link to={"/categorias/colores"} className="navLink-categorias">Colores</Link>
-                        </Dropdown.Item>
-                    </Dropdown.Menu>
-              </Dropdown>
-              
-            {
-                loading
-                ?  <Spinner animation="border" role="status">
-                     <span className="visually-hidden">Loading...</span>
-                  </Spinner>
-                : <ItemList items={items}/>
-            }
+            <Dropdown className="contDropdown">
+                <Dropdown.Toggle className="btn-categorias">
+                  Categorias
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">
+                    <Link to={"/productos"} className="navLink-categorias">Todos</Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-1">
+                    <Link to={"/categorias/negro"} className="navLink-categorias">Negro</Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    <Link to={"/categorias/carey"} className="navLink-categorias">Carey</Link>
+                  </Dropdown.Item>
+                   <Dropdown.Item href="#/action-3">
+                      <Link to={"/categorias/colores"} className="navLink-categorias">Colores</Link>
+                    </Dropdown.Item>
+                 </Dropdown.Menu>
+           </Dropdown>
+
             
             
+           <ItemList items={items}/>
         </section>
     )
 } 

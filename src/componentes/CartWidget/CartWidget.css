@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:wght@200&family=Roboto+Flex:opsz@8..144&display=swap');
 
 .carrito {
-    color:#3e2d4b;
+    color:#C3ACE9;
     font-size: 15px;
     font-family: "Belleza";
     text-decoration: none;
@@ -10,12 +10,12 @@
 .linkCarrito:hover {
     transform: scale(1.5);
     font-weight: bolder;
-    color: #3e2d4b;;
+    color: #C3ACE9;;
 }
 
 .linkCarrito {
     text-decoration: none;
-    color:#3e2d4b;
+    color:#C3ACE9;
     font-size: 1.5em;
 
 }

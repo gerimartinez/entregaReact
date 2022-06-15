@@ -16,11 +16,17 @@ const ItemCount = ( {max, setContador, contador, onAdd} ) => {
         <div className="my-3 buttons">
             
             <div className="botones-cantidad">
-             <button onClick={handleRestar} className="btn btn-primary">-</button>
+             <button 
+                 onClick={handleRestar} 
+                 /*className={`${ counter === 1 ? "btn outline-primary" : "btn outline-primary"} ${counter === 1 ? "min-value" : "" }`}
+                 disabled = {counter === 1 ? true : false } */               
+                >
+                 -
+             </button>
              <span className="contador">{contador}</span>
-             <button onClick={handleSumar} className="btn btn-primary">+</button>
+             <button onClick={handleSumar} className="btn btn-primary btnCount">+</button>
              
-             <Button onClick={onAdd} className="btn btn-primary mx-4">Añadir al carrito</Button>
+             <Button onClick={onAdd} className="btn btn-primary mx-4 btnCount">Añadir al carrito</Button>
             </div>
 
         </div>

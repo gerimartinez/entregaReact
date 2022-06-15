@@ -7,16 +7,18 @@
     justify-content: center;
 
 }
-.btn-primary {
+.btnCount {
     color: azure;
-    background-color: #D3AFEA;
-    border-color: #D3AFEA;
+    background-color: #C3ACE9;
+    border-color: #C3ACE9;
     font-family: "Belleza";
+    font-size: 1.3em;
 
 }
-.btn-primary:hover {
-  background-color: #ebd7fb;
-  border-color: #ebd7fb;
+.btnCount:hover {
+  background-color: #C3ACE9;
+  border-color: #C3ACE9;
+  color: black;
 }
 .contador {
     margin: 12px 12px;

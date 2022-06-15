@@ -46,17 +46,24 @@ h6 {
     font-style: bolder;
     font-family: "Belleza";
     color: azure;
+    font-weight: 600;
+    letter-spacing: 0.015cm;
 }
 
 .btnShop {
     display: flex;
     justify-content: center;
     color: azure;
-    background-color: #3e2d4b;
-    border-color: #3e2d4b;
+    background-color: #D4DA5A;
+    border-color: #D4DA5A;
     text-decoration:none;
+    font-size: 1.1em;
+    margin: 1em;
 }
 
 .btnShop:hover {
     text-decoration:none;
+    background-color: #D4DA5A;
+    border-color: #D4DA5A;
+    color: black;
 }

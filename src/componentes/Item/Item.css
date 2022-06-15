@@ -3,23 +3,12 @@
     border: #4f4b51;
 }
 .card-body {
-    background-color: #B2A8B8;
-}
+    background-color: #B2A8B8;}
 .card-Title {
     font-family: "Belleza";
     font-size: 2em;
     text-align: center;
-    color: azure;
-
-}
-
-.cardText {
-    font-family: "Belleza";
-    font-size: 1.3em;
-    text-align: center;
-    color: azure;
-
-}
+    color: azure;}
 
 .card-Precio {
     font-family: "Belleza";
@@ -28,28 +17,21 @@
     color: azure;
     letter-spacing: 0.1em;
     display: flex;
-    justify-content: center;
+    justify-content: center;}
 
-}
-
-.btnVolver {
-    font-family: "Belleza";
-    background-color: #D3AFEA;
-    border-color: #D3AFEA;
-    width: 6em;
-
-}
-.bg-geri {
+.btnItem {
     width: 7em;
     margin: 10px 10px;
-   
-    font-size: 1.2em;
-    
-}
+    background-color: #D4DA5A;
+    border-color: #D4DA5A;
+    font-size: 1.2em; }
+
+.btnItem:hover {
+    color: black;
+    background-color: #D4DA5A;
+    border-color: #D4DA5A;}
 
 .contBoton {
     display: flex;
     justify-content: center;
-    color: #D3AFEA;
-    text-decoration:none;
-}
+    text-decoration:none;}

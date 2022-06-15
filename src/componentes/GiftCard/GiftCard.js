@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap"
 
 
 export const GiftCard = () => {
+    
     return (
         <section className="contenedor">
           <h1>¡Un regalo especial!</h1>

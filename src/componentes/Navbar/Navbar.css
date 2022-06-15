@@ -4,7 +4,7 @@
 
 
 .header {
-    background-color: #ebd7fb;
+    background-color: #3A314C;
     
    
 }
@@ -46,7 +46,7 @@
 }
 
 .navLink {
-    color: #4C4352;;
+    color: #C3ACE9;
     font-family: "Belleza";
     font-size: 15px;
     text-decoration:none;
@@ -55,5 +55,5 @@
 .navLink:hover {
     transform: scale(1.2);
     font-weight: bolder;
-    color: #4C4352;
+    color: #C3ACE9;
 }

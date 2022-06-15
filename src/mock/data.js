@@ -7,7 +7,7 @@ const productos = [
         nombre: "GROW",
         cantidad: 1,
         max: 7,
-        precio: 1980,
+        precio: 2500,
         categoria: "negro"
        }, 
        {
@@ -16,7 +16,7 @@ const productos = [
         nombre: "PRINT",
         cantidad: 1,
         max: 5,
-        precio: 2500,
+        precio: 2700,
         categoria: "carey"
        },
        {
@@ -34,7 +34,7 @@ const productos = [
         nombre: "MILA",
         cantidad: 1,
         max: 15, 
-        precio: 2450,
+        precio: 2650,
         categoria: "carey"
        }, 
        {
@@ -43,7 +43,7 @@ const productos = [
         nombre: "DOLLE",
         cantidad: 1,
         max: 8,
-        precio: 2230,
+        precio: 2730,
         categoria: "negro"
        }, 
        {
@@ -52,7 +52,7 @@ const productos = [
         nombre: "ESTOCOLMO",
         cantidad: 1,
         max: 5,
-        precio: 2550,
+        precio: 2950,
         categoria: "carey"
        },
        
@@ -81,7 +81,7 @@ const productos = [
         nombre: "ROLL",
         cantidad: 1,
         max: 4,
-        precio: 3150,
+        precio: 3000,
         categoria: "negro"
        },
        {
@@ -99,7 +99,7 @@ const productos = [
         nombre: "ESTOCOLMO",
         cantidad: 1,
         max: 5,
-        precio: 3350,
+        precio: 3300,
         categoria: "colores"
        },
        {
@@ -113,13 +113,32 @@ const productos = [
        },
        {
         id: 12,
-        img: "/imagenes/claud35.png",
+        img: "/imagenes/64.png",
         nombre: "CLAUD",
         cantidad: 1,
         max: 7,
-        precio: 3550,
+        precio: 3150,
         categoria: "negro",
        
        },
+       {
+        id: 13,
+        img: "/imagenes/carra.png",
+        nombre: "CARRA",
+        cantidad: 1,
+        max: 7,
+        precio: 3550,
+        categoria: "carey",
+       
+       },
+       {
+        id: 14,
+        img: "/imagenes/11.png",
+        nombre: "KILL",
+        cantidad: 1,
+        max: 7,
+        precio: 3250,
+        categoria: "negro",
+      }
 ]
 export default productos

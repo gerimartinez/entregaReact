@@ -14,7 +14,7 @@
 }
 
 .navLink-categorias {
-    color: #4C4352;;
+    color: #3A314C;
     font-family: "Belleza";
     font-size: 1.3em;
     padding-bottom: 2em;
@@ -25,15 +25,17 @@
 .navLink-categorias:hover {
     transform: scale(1.2);
     font-weight: bolder;
-    color: #4C4352;
+    color: #3A314C;
 }
 
 .headerNav-Cat {
     padding-bottom: 2em;
 }
 
-.btncategorias {
+.btn-categorias {
     padding: 10px auto;
+   background-color: #C3ACE9;
+   border-color: #C3ACE9;
     
 }
 
@@ -41,4 +43,5 @@
     padding: 2em 1em;
     margin: 10px auto;
     padding-bottom: 3em;
+    
 }

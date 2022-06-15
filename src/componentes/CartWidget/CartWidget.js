@@ -11,7 +11,7 @@ export const CartWidget = () => {
   return (
     <Link to={"/cart"} className="linkCarrito">
        <AiOutlineShoppingCart/>
-       <span>{totalCart}</span>
+       <span className="mx-1">{totalCart()}</span>
     </Link>
   )
 }

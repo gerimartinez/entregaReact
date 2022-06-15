@@ -34,11 +34,13 @@
     }
 
 .imgCart {
-    width: 10em;
+    width: 11.5em;
 }
 
 .divContCart {
     background-color: #eae8e8;
+    margin: 1em 1em;
+    padding: 2em;
    
 }
 
@@ -46,4 +48,17 @@
 .btnVolver {
     margin: 15px;
     padding: 10px 10px;
+}
+
+.vaciarCarrito {
+    padding: 1em ;
+    margin: 2em ;
+    background-color: #D4DA5A;
+    border-color: #D4DA5A;
+    font-size: 1.1em;
+}
+.vaciarCarrito:hover {
+    background-color: #D4DA5A;
+    border-color: #D4DA5A;
+    color: black;
 }
