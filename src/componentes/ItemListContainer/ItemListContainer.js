@@ -1,11 +1,12 @@
 import "./ItemListContainer.css"
 import { useEffect, useState } from 'react'
-import { pedirDatos } from "../../mock/pedirDatos"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
 import Dropdown from 'react-bootstrap/Dropdown'
 import Loader from "../Loader/Loader"
+import { collection, getDocs, query, where } from "firebase/firestore"
+import { db } from "../../firebase/config"
 
 
 export const ItemListContainer = () => {
@@ -20,22 +21,25 @@ export const ItemListContainer = () => {
     useEffect(() => {
         setLoading(true)
 
-        pedirDatos(true)
-            .then((resp) => {
-              if (!categoryId) {
-                setItems(resp)
-              } else {
-                setItems(resp.filter((item) => item.categoria === categoryId))
+        const productosRef = collection(db, "productos")
+        const q = categoryId ? query(productosRef, 
+          where("categoria", "==", categoryId)) : productosRef 
+          where("precio", ">", 3000)
+
+        getDocs(q)
+          .then((data) => {
+            const newItems = data.docs.map((doc) => {
+              return {
+                id: doc.id,
+                ...doc.data()
               }
-              
             })
-            .catch((error) => {
-              console.log("error, ", error)
-            })
-            .finally(() => {
-                setLoading(false)
-            })
-    
+            setItems(newItems)
+          })
+          .finally(() => {
+              setLoading(false)
+          })
+
     }, [categoryId])
 
     if (loading) {

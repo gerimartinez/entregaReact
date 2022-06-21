@@ -12,7 +12,7 @@ const Item = ({item}) => {
           <Card.Img variant="top" src={item.img}/>
         </Link>
          
-         <Card.Body className="card-body-item">
+         <div className="card-body-item">
              <Card.Title className="card-Title">{item.nombre}</Card.Title>
              <Card.Text className="card-Text">
                  <hr></hr>
@@ -21,7 +21,7 @@ const Item = ({item}) => {
              <Link to={`/item/${item.id}`} className="contBoton">
                <Button className="mx-3 btnItem">Shop now</Button>
               </Link>
-         </Card.Body>
+         </div>
      </Card>
       
     )

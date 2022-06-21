@@ -38,6 +38,11 @@
    border-color: #C3ACE9;
     
 }
+.btn-categorias:hover {
+    background-color: #C3ACE9;
+    border-color: #C3ACE9;
+    color: black;
+}
 
 .contDropdown {
     padding: 2em 1em;

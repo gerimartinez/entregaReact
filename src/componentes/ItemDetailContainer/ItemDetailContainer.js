@@ -1,9 +1,9 @@
-import { pedirDatos } from "../../mock/pedirDatos"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import  { ItemDetail }  from "../ItemDetail/ItemDetail"
 import Loader from "../Loader/Loader"
-
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../../firebase/config"
 
 export const ItemDetailContainer = () => {
     
@@ -15,20 +15,15 @@ export const ItemDetailContainer = () => {
 
     useEffect(() => {
         setLoading(true)
-
-        pedirDatos(true)
-            .then((resp) => {
-              setItem(resp.find((item) => item.id === Number(itemId)))
-              setLoading(false)
-            })
-            .catch((error) => {
-              console.log("error, ", error)
-              setLoading(false)
+        
+        const docRef = doc(db, "productos", itemId)
+        getDoc(docRef)
+            .then((doc) => {
+                setItem( {id: doc.id, ...doc.data()} )
             })
             .finally(() => {
                 setLoading(false)
             })
-    
     }, [])
 
     return (
