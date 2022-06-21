@@ -3,29 +3,16 @@ import { useCartContext } from "../context/CartContext"
 import { HiOutlineTrash } from "react-icons/hi"
 import { Link } from "react-router-dom"
 import Button from "react-bootstrap/Button"
+import  EmptyCart  from "./EmptyCart"
 
 const Cart = () => {
 
     const {cart, totalPrice, emptyCart, removeItem} = useCartContext()
     
-    if (cart.length === 0) {
-        return (
-
-            <div className="container my-5">
-                <h2>Tu carrito esta vacio</h2>
-                <hr/>
-                <Link to="/productos" className="btn btn-primary">Ir a comprar</Link>
-            </div>
+    if (cart.length === 0) return <EmptyCart/>
   
-        )
-    }
-    
-   
-
-   
     return (
-        <div className="container my-5">
-            
+        <div className="container my-5">  
             <h2>Tu compra</h2>
             
             {
@@ -50,6 +37,7 @@ const Cart = () => {
                                 <a href="#!" className="text-muted"><i className="fas fa-times"></i></a>
                                 <button onClick={() => removeItem(item.id)} className="btn btn-danger"><HiOutlineTrash/></button>
                           </div>
+                          
                         </div>
                      <hr className="my-4"/>
                     

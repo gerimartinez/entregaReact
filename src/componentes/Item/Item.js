@@ -8,8 +8,11 @@ const Item = ({item}) => {
     return (
        
       <Card style={{ width: '18rem' }} className="card">
-         <Card.Img variant="top" src={item.img}/>
-         <Card.Body className="card-body">
+        <Link to={`/item/${item.id}`}>
+          <Card.Img variant="top" src={item.img}/>
+        </Link>
+         
+         <Card.Body className="card-body-item">
              <Card.Title className="card-Title">{item.nombre}</Card.Title>
              <Card.Text className="card-Text">
                  <hr></hr>

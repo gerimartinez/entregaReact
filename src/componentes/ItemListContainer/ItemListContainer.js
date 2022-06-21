@@ -1,11 +1,11 @@
 import "./ItemListContainer.css"
-import { useContext, useEffect, useState } from 'react'
-import Spinner from 'react-bootstrap/Spinner'
+import { useEffect, useState } from 'react'
 import { pedirDatos } from "../../mock/pedirDatos"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
 import Dropdown from 'react-bootstrap/Dropdown'
+import Loader from "../Loader/Loader"
 
 
 export const ItemListContainer = () => {
@@ -40,11 +40,8 @@ export const ItemListContainer = () => {
 
     if (loading) {
       return (
-        <section>
-          <Spinner animation="border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </Spinner>
-        </section>
+        
+        <Loader/>
       )
     }
         
@@ -77,10 +74,4 @@ export const ItemListContainer = () => {
     )
 } 
 
-//promesa
-//.then((data) => {   //me trae el resolve de la promesa
-  //      console.log(data)
-   //     })
-     //   .catch((error) => {  //me trae el reject lo capto con catch
-       // console.log("Error ", error)
-        //})
+

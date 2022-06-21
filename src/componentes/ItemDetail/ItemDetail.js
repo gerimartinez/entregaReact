@@ -24,6 +24,8 @@ export const ItemDetail = ({item}) => {
     }
 
     const handleAgregar = () => {
+        if (cantidad === 0) return
+        
         const itemToCart = {
             ...item,
             cantidad
@@ -47,6 +49,7 @@ export const ItemDetail = ({item}) => {
                     <ListGroupItem className="cardPrecio">${item.precio}</ListGroupItem>
                 </ListGroup>
                 <Card.Body className="cardBody-Detail">
+                    
                     {
                         isInCart(item.id)
                         ? <Link to="/cart" className="btn btn-primary my-5 btnFinalizar">Finalizar compra</Link>
@@ -59,6 +62,7 @@ export const ItemDetail = ({item}) => {
                                 onAdd={handleAgregar}
                             />
                     }
+                    
                  <Link to="/productos" className="btn btn-primary btnSeguir">Seguir comprando</Link>  
                 </Card.Body>
            </Card>

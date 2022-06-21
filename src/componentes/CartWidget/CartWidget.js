@@ -9,7 +9,7 @@ export const CartWidget = () => {
   const {totalCart} = useCartContext()
 
   return (
-    <Link to={"/cart"} className="linkCarrito">
+    <Link to={"/cart"} className={`linkCarrito ${totalCart() === 0 ? "linkCarrito-hidden" : ``}`}>
        <AiOutlineShoppingCart/>
        <span className="mx-1">{totalCart()}</span>
     </Link>

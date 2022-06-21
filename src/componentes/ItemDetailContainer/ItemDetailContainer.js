@@ -2,7 +2,7 @@ import { pedirDatos } from "../../mock/pedirDatos"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import  { ItemDetail }  from "../ItemDetail/ItemDetail"
-import { Spinner } from "react-bootstrap"
+import Loader from "../Loader/Loader"
 
 
 export const ItemDetailContainer = () => {
@@ -36,9 +36,7 @@ export const ItemDetailContainer = () => {
       
             {
                 loading
-                ?  <Spinner animation="border" role="status">
-                     <span className="visually-hidden">Loading...</span>
-                  </Spinner>
+                ?  <Loader/>
                 : <ItemDetail item={item}/>
             }
             

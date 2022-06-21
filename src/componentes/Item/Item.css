@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+
 .card {
     margin: 1.7em auto;
     border: #4f4b51;
 }
-.card-body {
+.card-body-item {
     background-color: #B2A8B8;}
 .card-Title {
     font-family: "Belleza";
@@ -24,7 +27,9 @@
     margin: 10px 10px;
     background-color: #D4DA5A;
     border-color: #D4DA5A;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    font-family: "PT Serif";
+    letter-spacing: 0.01cm; }
 
 .btnItem:hover {
     color: black;

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:wght@200&family=Roboto+Flex:opsz@8..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=PT+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 
 .cardDetail {
     width: 25rem;
@@ -10,12 +11,15 @@
     color: #3A314C;
 
 }
-.cardBody-Detail {
+.card-body {
+    background-color: whitesmoke;
+}
+.cardBody {
     background-color: whitesmoke;
 }
 
 .cardText {
-    font-family: "Belleza";
+    font-family: "PT Serif";
     font-size: 1.3em;
     font-weight: 400;
     text-align: center;
@@ -31,7 +35,7 @@
     font-weight: 600;
     text-align: center;
     color: #D4DA5A;
-    background-color: whitesmoke;
+   
 
 }
 
@@ -51,6 +55,8 @@
     background-color: #C3ACE9;
     border-color: #C3ACE9;
     width: 6em;
+    font-size: 1.3em;
+
 }
 .btnVolver:hover {
     background-color: #C3ACE9;
@@ -62,6 +68,13 @@
     padding: 10px 10px;
     background-color: #C3ACE9;
     border-color: #C3ACE9;
+    font-size: 1.3em;
+}
+
+.btnFinalizar:hover {
+    background-color: #C3ACE9;
+    border-color: #C3ACE9;
+    color: black;
 }
 .btnSeguir {
     margin: 15px auto;
@@ -69,7 +82,7 @@
     background-color: #C3ACE9;
     border-color: #C3ACE9;
     font-family: "Belleza";
-    font-size: 1.11em;}
+    font-size: 1.2em;}
 .btnSeguir:hover {
     background-color: #C3ACE9;
     border-color: #C3ACE9;

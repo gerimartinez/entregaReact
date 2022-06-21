@@ -17,5 +17,12 @@
     text-decoration: none;
     color:#C3ACE9;
     font-size: 1.5em;
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease-in-out;
+}
 
+.linkCarrito-hidden {
+    visibility: hidden;
+    opacity: 0;
 }
