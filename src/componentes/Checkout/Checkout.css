@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+
 .btn-lg {
     padding: 10px 10px;
     margin: 5px;
@@ -8,13 +11,34 @@
     background-color: #eae8e8;
 }
 
-h2 {
-    color: black;
-    font: 1.5em;
-}
 
+.titulo {
+    font-family: "Belleza";
+    font-size: 3em;
+    color:#4C4352;
+}
 .resumenCont {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.finPedido {
+    font-family: "Belleza";
+    font-size: 3em;
+}
+
+.numPedido {
+    font-family: "Belleza";
+    font-size: 1.4em;
+}
+
+.textoCheck {
+    font-family: "Belleza";
+    color: #4C4352;
+}
+
+.btnCheck {
+    font-family: "Belleza";
+    background-color: #4C4352;
 }

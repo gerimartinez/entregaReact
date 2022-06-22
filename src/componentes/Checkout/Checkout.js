@@ -47,6 +47,7 @@ const Checkout = () => {
             items: cart.map(({id, cantidad, nombre, precio}) => ({id, cantidad, nombre, precio})),
             total: totalPrice()
         }
+
         console.log(orden)
         const batch = writeBatch(db)
         const ordersRef = collection(db, "orders")
@@ -86,7 +87,7 @@ const Checkout = () => {
     if (orderId) {
         return (
             <div className="container my-5">
-                <h2 className="finPedido">Gracias por su compra!</h2>
+                <h2 className="finPedido">¡GRACIAS POR SU COMPRA!</h2>
                 <hr/>
                 <p className="numPedido">Su numero de pedido es: {orderId}</p>
             </div>
@@ -100,7 +101,7 @@ const Checkout = () => {
 
     return (
       <form onSubmit={handleSubmit} className="container my-5 formContainer">
-            <h2>Checkout</h2>
+            <h2 className="titulo">CHECKOUT</h2>
             <div className="" >
                 <div className="">
                     <div className="form-outline">
@@ -169,21 +170,21 @@ const Checkout = () => {
                 </div> 
               
          </div>
-         <div class="bg-grey resumenCont">
-             <div class="p-5">
-                 <h3 class="fw-bold mb-5 mt-2 pt-1">Resumen</h3>
-                 <hr class="my-4"/>
+         <div className="bg-grey resumenCont">
+             <div className="p-5">
+                 <h3 className="fw-bold mb-5 mt-2 pt-1 textoCheck" >Resumen</h3>
+                 <hr className="my-4"/>
 
-                 <div class="d-flex justify-content-between mb-4">
-                     <h5 class="text-uppercase"></h5>
+                 <div className="d-flex justify-content-between mb-4">
+                     <h5 className="text-uppercase"></h5>
                      <h5> </h5>
                  </div>
 
-                 <h5 class="text-uppercase mb-3">Tu compra</h5>
+                 <h5 className="text-uppercase mb-3 textoCheck">Tu compra</h5>
 
-                    <div class="mb-4 pb-2">
-                              <h6 className="text-muted">{}</h6>
-                              <h6 className="text-black mb-0"> </h6>
+                    <div className="mb-4 pb-2">
+                              <h6 className="text-muted"></h6>
+                              <h6 className="text-black mb-0">{} </h6>
 
                         
                     </div>
@@ -197,16 +198,16 @@ const Checkout = () => {
                         </div>
                     </div> */}
 
-                    <hr class="my-4"/>
+                    <hr className="my-4"/>
 
-                    <div class="d-flex justify-content-between mb-5">
-                            <h5 class="text-uppercase">Total: $ {totalPrice()}</h5>
+                    <div className="d-flex justify-content-between mb-5">
+                            <h5 className="text-uppercase textoCheck">Total: $ {totalPrice()}</h5>
                             
                     </div>
 
-                    <Button type="submit" className="btn btn-dark btn-block btn-lg">Enviar</Button>
+                    <Button type="submit" className="btn btn-dark btn-block btn-lg btnCheck">Enviar</Button>
                     <button onClick={emptyCart} 
-                        className="btn btn-dark btn-block btn-lg">Cancelar mi compra
+                        className="btn btn-dark btn-block btn-lg btnCheck">Cancelar mi compra
                     </button> 
          </div>
            </div>
