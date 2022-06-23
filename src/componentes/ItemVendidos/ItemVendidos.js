@@ -10,7 +10,7 @@ export const ItemVendidos = () => {
            <h6>// COOLEST SUNGLASSES IN TOWN // COOLEST SUNGLASSES IN TOWN // COOLEST SUNGLASSES IN TOWN  // COOLEST SUNGLASSES IN TOWN  // COOLEST SUNGLASSES // </h6>
          <Carousel className="contCarousel"> 
                 <Carousel.Item>
-                    <Link to={`/item/9`}>
+                    <Link to={`/item/mkQUGdL7NHeDBmpuHbIl`}>
                         <img
                             className="d-block w-100 imgCarousel"
                             src="./imagenes/morecar1.png"
@@ -25,7 +25,7 @@ export const ItemVendidos = () => {
                   </Carousel.Caption>
               </Carousel.Item>
              <Carousel.Item>
-                    <Link to={`/item/10`}>
+                    <Link to={`/item/PsZRnGb4J777LCitbS2r`}>
                         <img
                             className="d-block w-100 imgCarousel"
                             src="./imagenes/emicar.png"
@@ -38,7 +38,7 @@ export const ItemVendidos = () => {
                     </Carousel.Caption>
               </Carousel.Item>
                 <Carousel.Item>
-                    <Link to={`/item/13`}>
+                    <Link to={`/item/vMuS0qo5wcv4VVHiWifZ`}>
                         <img
                             className="d-block w-100 imgCarousel"
                             src="./imagenes/morecar3.png"
@@ -51,10 +51,10 @@ export const ItemVendidos = () => {
                     </Carousel.Caption>
                 </Carousel.Item> 
          </Carousel>
-           <h1>NUESTROS PRODUCTOS MAS VENDIDOS</h1>
+           <h1 data-aos="fade-down">NUESTROS PRODUCTOS MAS VENDIDOS</h1>
            <div className="vendidoContainer">
-             <div className="prodCard">
-                    <Link to={`/item/3`}>
+             <div data-aos="fade-down" className="prodCard">
+                    <Link to={`/item/L99eUJrIteNKbCMRSf1R`}>
                         <img src="./imagenes/mila.png" className="imgVendidos"></img>
                     </Link>
                     
@@ -66,8 +66,8 @@ export const ItemVendidos = () => {
                     </Link>
                     
               </div>
-                <div className="prodCard">
-                    <Link to={`/item/4`}>
+                <div data-aos="fade-down" className="prodCard">
+                    <Link to={`/item/upulPxWXopK0Eb4qChy2`}>
                         <img src="./imagenes/dolle.png" className="imgVendidos"></img>
                     </Link>
                     <h2>Dolle</h2>
@@ -78,8 +78,8 @@ export const ItemVendidos = () => {
                     </Link>
                     
                 </div>
-                <div className="prodCard">
-                    <Link to={`/item/5`}>
+                <div data-aos="fade-down" className="prodCard">
+                    <Link to={`/item/nLSjCqVLoGPLxPu1MBX6`}>
                         <img src="./imagenes/estocolmo.png" className="imgVendidos"></img>
                     </Link>
                     <h2>Estocolmo</h2>

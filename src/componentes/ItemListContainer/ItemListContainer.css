@@ -44,9 +44,20 @@
     color: black;
 }
 
+.btn-categorias:active{
+    background-color: #C3ACE9;
+    border-color: #C3ACE9;
+    color: black;
+}
+
 .contDropdown {
     padding: 2em 1em;
     margin: 10px auto;
     padding-bottom: 3em;
     
 }
+.btn-check:checked,
+  .btn-check:active {
+    color: #fff;
+    background-color: #C3ACE9;
+    border-color: #C3ACE9;}

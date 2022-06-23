@@ -19,7 +19,7 @@ const PrivateRoutes = () => {
 
         <>
             <Navbar/>
-            <UserInfo/>
+            
             <Routes>
                     <Route path='/' element={<ItemVendidos/>}/>
                     <Route path='/productos' element={ <ItemListContainer/> }/>
@@ -32,7 +32,7 @@ const PrivateRoutes = () => {
                     <Route path='*' element={ <Navigate to={"/"}/> } />
 
             </Routes>
-
+            <UserInfo/>
            <Footer/>
         </>
     )

@@ -44,21 +44,60 @@
    
 }
 
-
+.contBtns {
+    align-items: center;
+    margin: auto;
+    padding: 1.3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
 .btnVolver {
     margin: 15px;
     padding: 10px 10px;
 }
 
 .vaciarCarrito {
-    padding: 1em ;
-    margin: 2em ;
+    font-family: "Belleza";
+    padding: 0.6em;
     background-color: #D4DA5A;
     border-color: #D4DA5A;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 .vaciarCarrito:hover {
     background-color: #D4DA5A;
     border-color: #D4DA5A;
     color: black;
+}
+
+.btnSeguir {
+    padding: 0.6em;
+    font-size: 1.2em;
+}
+
+.iniciarCompra {
+    font-family: "Belleza";
+    padding: 0.6em;
+    background-color: #D4DA5A;
+    border-color: #D4DA5A;
+    font-size: 1.2em;
+    width: 56em;
+    font-weight: 600;
+    letter-spacing: 0.1cm;
+}
+.iniciarCompra:hover {
+    font-family: "Belleza";
+    background-color: #D4DA5A;
+    border-color: #D4DA5A;
+    color: rgb(43, 41, 41);
+}
+
+.carContainer {
+    background-color: #eae8e8;
+}
+
+.title, .total {
+    font-family: "Belleza";
+   color: #4C4352;
+   padding: 1em;
 }

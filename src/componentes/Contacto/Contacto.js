@@ -1,13 +1,13 @@
 import { useState } from "react"
 import Button from "react-bootstrap/Button"
-
+import "./Contacto.css"
 
 export const Contacto = () => {
 
     const [values, setValues] = useState({
         nombre: "",
         email: "",
-        tel: ""
+        consulta: ""
     })
     
     const handleInputChange = (e) => {
@@ -33,13 +33,13 @@ export const Contacto = () => {
             
 
             <form onSubmit={handleSubmit}>
-                <h4>Login</h4>
+                <h4></h4>
                 <input
                     name="nombre"
                     onChange={handleInputChange}
                     value={values.nombre}
                     placeholder="Nombre"
-                    type={"text"}
+                    type={"nombre"}
                     className="form-control my-2"
                 />
 
@@ -54,14 +54,14 @@ export const Contacto = () => {
                 />
 
                 <input
-                    name="telefono"
+                    name="text"
                     onChange={handleInputChange}
-                    value={values.tel}
-                    placeholder="Numero de telefono"
-                    type={"text"}
+                    value={values.consulta}
+                    placeholder="Consulta"
+                    type={"consulta"}
                     className="form-control my-2"
                 />
-                <Button type={"submit"}>Enviar</Button>
+                <Button type={"submit"} className="btnEnviar">Enviar</Button>
             </form>
         </div>
 

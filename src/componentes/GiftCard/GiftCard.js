@@ -1,5 +1,6 @@
 import "./GiftCard.css"
 import { Button } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 
 export const GiftCard = () => {
@@ -7,7 +8,7 @@ export const GiftCard = () => {
     return (
         <section className="contenedor">
           <h1>¡Un regalo especial!</h1>
-          <img src="/imagenes/GiftCarddeJoyeríaFemeninoRosa.png" className="imgGiftcard"></img>
+          <img src="/imagenes/GiftCard.png" className="imgGiftcard"></img>
             <div className="container my-5 containerGif">
             
                 <hr/>
@@ -20,7 +21,11 @@ export const GiftCard = () => {
                     con toda la información necesaria para canjearla (Número y Monto) con una validez de 3 meses.
                     El pago puede efectuarse a través de Mercado Pago, efectivo y/o transferencia.
                 </p>    
-                <Button className="btn btn-primary mx-4">Añadir al carrito</Button>
+
+                <Link to={`/item/Y4Xy0ywcyXc47YTmFv1m`} className="contBoton">
+                    <Button className="btn btn-primary mx-4 btnGift">Comprar</Button>
+                </Link>
+                
             </div>
         </section>
         

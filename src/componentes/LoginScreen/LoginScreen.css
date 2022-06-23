@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+
 .gradient-custom-2 {
     /* fallback for old browsers */
     background: #fccb90;
     
     /* Chrome 10-25, Safari 5.1-6 */
-    background-image: linear-gradient(to bottom, #ce9cb8, #c888b2, #c074ae, #b560ac, #a84cab, #a64fb1, #a452b7, #a255bd, #ae6cc9, #ba83d4, #c699df, #d3afea);
+    background-color: #C3ACE9;
     
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to bottom, #ce9cb8, #c888b2, #c074ae, #b560ac, #a84cab, #a64fb1, #a452b7, #a255bd, #ae6cc9, #ba83d4, #c699df, #d3afea);
 
     }
     
@@ -21,3 +23,36 @@
     border-bottom-right-radius: .3rem;
     }
     }
+.imgArmon {
+    width: 50%;
+}
+.titleText {
+    font-family: "Belleza";
+    font-size: 2.5em;
+    color: #4C4352;
+    font-weight: 500;
+}
+
+.textLogin {
+    font-family: "Belleza";
+    font-size: 1.3em;
+    color: #4C4352;
+}
+
+.btnLogin {
+    font-family: "Belleza";
+    border-color: linear-gradient(to bottom, #ce9cb8, #c888b2, #c074ae, #b560ac, #a84cab, #a64fb1, #a452b7, #a255bd, #ae6cc9, #ba83d4, #c699df, #d3afea);
+    border-radius: #C3ACE9;
+     color: white;
+    font-size: 1.4em;
+}
+
+.textAsideTitle {
+    font-family: "Belleza";
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.textAside {
+    font-family: "Belleza";
+    font-size: 1.2em;
+}

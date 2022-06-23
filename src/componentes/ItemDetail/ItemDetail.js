@@ -10,7 +10,7 @@ import { CartContext } from "../context/CartContext"
 
 
 
-export const ItemDetail = ({item}) => {
+export const ItemDetail = ({item }) => {
 
     const {addItem, isInCart} = useContext(CartContext)
     console.log(isInCart(item.id))
@@ -22,6 +22,7 @@ export const ItemDetail = ({item}) => {
     const handleVolver = () => {
         navigate(-1)
     }
+    
 
     const handleAgregar = () => {
         if (cantidad === 0) return
@@ -60,9 +61,9 @@ export const ItemDetail = ({item}) => {
                                 contador={cantidad}
                                 setContador={setCantidad}
                                 onAdd={handleAgregar}
+                                
                             />
                     }
-                    
                  <Link to="/productos" className="btn btn-primary btnSeguir">Seguir comprando</Link>  
                 </Card.Body>
            </Card>

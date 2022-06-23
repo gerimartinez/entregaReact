@@ -1,7 +1,10 @@
 import { useState } from "react"
+import { useAuthContext } from "../context/AuthContext"
 import "./LoginScreen.css"
 
 const LoginScreen = () => {
+
+    const {login, error} = useAuthContext()
 
     const [values, setValues] = useState({
         email: "",
@@ -17,29 +20,29 @@ const LoginScreen = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(values)
+        login(values)
+        
     }
     
     return (
-        <section class="h-100 gradient-form" >
-            <div class="container py-5 h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-xl-10">
-                    <div class="card rounded-3 text-black">
-                    <div class="row g-0">
-                        <div class="col-lg-6">
-                        <div class="card-body p-md-5 mx-md-4">
+        <section className="h-100 gradient-form" >
+            <div className="container py-5 h-100">
+                <div className="row d-flex justify-content-center align-items-center h-100">
+                <div className="col-xl-10">
+                    <div className="card rounded-3 text-black">
+                    <div className="row g-0">
+                        <div className="col-lg-6">
+                        <div className="card-body p-md-5 mx-md-4">
 
-                            <div class="text-center">
-                            {/* <img src="./imagenes/armonstudio.png"
-                                style="width: 185px;" alt="logo"/> */}
-                            <h4 class="mt-1 mb-5 pb-1">Armon Studio</h4>
+                            <div className="text-center">
+                            <img src="../imagenes/armonstudio.png" className="imgArmon"></img>
+                            <h4 className="mt-1 mb-5 pb-1 titleText">ARMON STUDIO</h4>
                             </div>
 
                             <form onSubmit={handleSubmit}>
-                                <p>Ingresa tu cuenta</p>
+                                <p className="textLogin">Ingresa tu cuenta</p>
 
-                                <div class="form-outline mb-4">
+                                <div className="form-outline mb-4">
                                     <input 
                                     type={"email"} 
                                     name="email"
@@ -49,32 +52,25 @@ const LoginScreen = () => {
                                     class="form-control"
                                     placeholder="email@example.com"/>
 
-                                    <label class="form-label" for="form2Example11">Email</label>
+                                    {error.email && <small className='text-danger'>{error.email}</small>}
                                 </div>
 
-                                <div class="form-outline mb-4">
+                                <div className="form-outline mb-4">
                                     <input 
                                     type={"password"}
                                     name="password"
                                     value={values.password}
                                     onChange={handleInputChange} 
                                     id="form2Example22" 
-                                    class="form-control"/>
-
-                                    <label class="form-label" for="form2Example22">Password</label>
+                                    class="form-control"
+                                    placeholder="password"/>
+                                   
+                                    {error.password && <small className='text-danger'>{error.password}</small>}
                                 </div>
 
                                 
-                                <button type="submit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3">Login</button>
-                                {/* <div class="text-center pt-1 mb-5 pb-1">
-                                    
-                                    <a class="text-muted" href="#!">Forgot password?</a>
-                                </div>
-
-                                <div class="d-flex align-items-center justify-content-center pb-4">
-                                    <p class="mb-0 me-2">Don't have an account?</p>
-                                    <button type="button" class="btn btn-outline-danger">Create new</button>
-                                </div> */}
+                                <button type="submit" className="btn  btn-block fa-lg gradient-custom-2 mb-3 btnLogin">Login</button>
+            
 
                             </form>
 
@@ -82,10 +78,16 @@ const LoginScreen = () => {
                         </div>
                         <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                         <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                            <h4 class="mb-4">We are more than just a company</h4>
-                            <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <h4 className="mb-4 textAsideTitle">SOMOS MÁS QUE UNA TIENDA DE LENTES DE SOL</h4>
+                            <p className="small mb-0 textAside">
+                                "ARMON" viene de Armonía. Y de esto se trata un poco este emprendimiento,
+                                de tener buena comunicación con mis clientxs, de destinarle tiempo a mis ideas, 
+                                a sus opiniones y a sus gustos.
+                                De adaptarme a los cambios que sean necesarios para evolucionar.
+                                De crear un ambiente de equilibrio, con buenas energías y 
+                                predisposición para poder recibirlos, atenderlos de la mejor manera 
+                                y que se sientan cómodos y libres a la hora de elegir sus Armon!
+                            </p>
                         </div>
                         </div>
                     </div>

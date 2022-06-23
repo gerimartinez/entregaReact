@@ -1,0 +1,11 @@
+.btnEnviar {
+
+      background-color: #C3ACE9;
+      border-color: #C3ACE9;
+}
+
+.btnEnviar:hover {
+    background-color: #C3ACE9;
+      border-color: #C3ACE9;
+      color: black;
+}

@@ -205,7 +205,7 @@ const Checkout = () => {
                             
                     </div>
 
-                    <Button type="submit" className="btn btn-dark btn-block btn-lg btnCheck">Enviar</Button>
+                    <Button type="submit" className="btn btn-dark btn-block btn-lg mx-4 btnCheck">Enviar</Button>
                     <button onClick={emptyCart} 
                         className="btn btn-dark btn-block btn-lg btnCheck">Cancelar mi compra
                     </button> 

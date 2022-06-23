@@ -36,7 +36,9 @@ const ItemCount = ( {max, setContador, contador, onAdd} ) => {
                    >
                         +
                 </button>
-             <Button disabled={contador === 0} onClick={onAdd} className="btn btn-primary mx-4 btnCount">Añadir al carrito</Button>
+              <Button onClick={onAdd} className="btn btn-primary mx-4 btnCount">Añadir al carrito</Button>
+
+            
             </div>
 
         </div>
