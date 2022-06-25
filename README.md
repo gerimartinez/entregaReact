@@ -2,8 +2,8 @@
 
 ## Utilizando librerias:
 
-`*React dom`
-`*Bootstrap`
-`*Firebase` *(para el uso de base de datos, cargar productos, generar ordenes)*
-`*Formik - *Yup` *(para el manejo de formularios, seguimiento de errores, valores, validar y manejar el envio)*
+* `React dom`
+* `Bootstrap`
+* `Firebase` *(para el uso de base de datos, cargar productos, generar ordenes)*
+* `*Formik - *Yup` *(para el manejo de formularios, seguimiento de errores, valores, validar y manejar el envio)*
 
