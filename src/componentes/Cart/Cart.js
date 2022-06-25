@@ -25,7 +25,7 @@ const Cart = () => {
                                 <img
                                 src={item.img} className="imgCart"/>
                             </div>
-                            <div class="col-md-2 col-lg-2 col-xl-2">
+                            <div className="col-md-2 col-lg-2 col-xl-2">
                                 <h6 className="text-muted">Modelo: {item.nombre}</h6>
                                 <h6 className="text-black mb-0">Cantidad: {item.cantidad}</h6>
                             </div>

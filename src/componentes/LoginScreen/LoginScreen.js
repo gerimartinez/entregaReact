@@ -62,7 +62,7 @@ const LoginScreen = () => {
                                     value={values.password}
                                     onChange={handleInputChange} 
                                     id="form2Example22" 
-                                    class="form-control"
+                                    className="form-control"
                                     placeholder="password"/>
                                    
                                     {error.password && <small className='text-danger'>{error.password}</small>}
