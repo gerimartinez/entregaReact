@@ -1,11 +1,11 @@
 import "./Checkout.css"
 import { useState } from "react"
 import { useCartContext } from "../context/CartContext"
-import { createRoutesFromChildren, Navigate } from "react-router-dom"
+import { Navigate } from "react-router-dom"
 import  Button  from "react-bootstrap/Button"
 import { db } from "../../firebase/config"
-import { collection, getDocs, addDoc, doc, updateDoc, getDoc, writeBatch, query, where, documentId } from "firebase/firestore"
-import { Formik, FormikConsumer } from 'formik';
+import { collection, getDocs, addDoc, writeBatch, query, where, documentId } from "firebase/firestore"
+import { Formik } from 'formik';
 import * as Yup from "yup"
 
 const schema = Yup.object().shape({

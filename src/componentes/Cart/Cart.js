@@ -4,27 +4,14 @@ import { HiOutlineTrash } from "react-icons/hi"
 import { Link } from "react-router-dom"
 import Button from "react-bootstrap/Button"
 import  EmptyCart  from "./EmptyCart"
-import ItemCount from "../ItemCount/ItemCount"
-import { useState } from "react"
 
 const Cart = () => {
 
-    const {cart, totalPrice, emptyCart, removeItem, addItem, item} = useCartContext()
+    const {cart, totalPrice, emptyCart, removeItem} = useCartContext()
 
-    const [cantidad, setCantidad] = useState(1)
 
     if (cart.length === 0) return <EmptyCart/>
-    
-    const handleAgregar = () => {
-        if (cantidad === 0) return
-        
-        const itemToCart = {
-            ...item,
-            cantidad
-        }
-        addItem(itemToCart)
-    }
-    
+
 
     return (
         <div className="container my-5 carContainer">  
@@ -32,8 +19,8 @@ const Cart = () => {
             
             {
                 cart.map((item) => (
-                    <section className="divContCart">
-                      <div className="row mb-4 d-flex justify-content-between align-items-center" key={item.id}>
+                    <section className="divContCart" key={item.id}>
+                      <div className="row mb-4 d-flex justify-content-between align-items-center" >
                             <div className="col-md-2 col-lg-2 col-xl-2">
                                 <img
                                 src={item.img} className="imgCart"/>
