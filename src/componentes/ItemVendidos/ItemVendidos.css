@@ -33,6 +33,9 @@ h2 {
     text-align: center;
     padding: 10px 10px;
     color: azure;
+    font-family: "Belleza";
+    font-weight: 600;
+    letter-spacing: 0.15cm;
 }
 
 h6 {
@@ -57,8 +60,9 @@ h6 {
     background-color: #D4DA5A;
     border-color: #D4DA5A;
     text-decoration:none;
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin: 1em;
+    font-family: "Belleza";
 }
 
 .btnShop:hover {

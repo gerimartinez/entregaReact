@@ -9,17 +9,3 @@ export const pedirDatos = () => {
     })
     
 }
-
-// pedirDatos(true)
-// .then((resp) => {
-//     setItems(resp)
-//     setLoading(false)
-// })
-// .catch((error) => {
-//     console.log("error, ", error)
-//     setLoading(false)
-// })
-// .finally(() => {
-//     setLoading(false)
-// })
-

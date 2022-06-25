@@ -28,12 +28,12 @@ export const Contacto = () => {
 
     return (
         <div className="container my-5">
-            <h2>Contacto</h2>
+            <h2 className="contactTitle">Contacto</h2>
             <hr/>
             
 
             <form onSubmit={handleSubmit}>
-                <h4></h4>
+                <h4 className="consulta">¡Envianos tu consulta!</h4>
                 <input
                     name="nombre"
                     onChange={handleInputChange}
@@ -54,12 +54,12 @@ export const Contacto = () => {
                 />
 
                 <input
-                    name="text"
+                    name="consulta"
                     onChange={handleInputChange}
                     value={values.consulta}
                     placeholder="Consulta"
-                    type={"consulta"}
-                    className="form-control my-2"
+                    type={"text"}
+                    className="form-control consultaForm"
                 />
                 <Button type={"submit"} className="btnEnviar">Enviar</Button>
             </form>
@@ -71,15 +71,3 @@ export const Contacto = () => {
 }
 
 export default Contacto 
-  //  useEffect(() => {
-
-    //    const clicker = () => {
-   //         console.log("click detectado")
-    //    }
-
-      //  window.addEventListener("click", clicker)
-
-      //  return () => {
-       //     window.addEventListener("click", clicker)
-        //}
-    //}, [])

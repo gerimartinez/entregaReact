@@ -42,4 +42,22 @@
     font-family: "Belleza";
     background-color: #4C4352;
     width: 20em;
+    text-align: center;
+    justify-self:  center;
+}
+
+.compra {
+    font-family: "Belleza";
+    color: #4C4352;
+    font-size: 1.4em;
+    margin: 10px;
+    
+}
+
+.totalCheck {
+    font-family: "Belleza";
+    color: #4C4352;
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 0.01cm;
 }

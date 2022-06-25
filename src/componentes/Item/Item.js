@@ -1,7 +1,6 @@
 import "./Item.css"
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import ItemCount from "../ItemCount/ItemCount"
 import { Link } from "react-router-dom"
 
 const Item = ({item}) => {
@@ -29,10 +28,3 @@ const Item = ({item}) => {
 export default Item 
 
 
-//<div className="divInCard">
- //            <h2>{item.nombre}</h2>
-   //          <img src={item.img} alt="" className='imgCard'/>
-    //         <p>${item.precio}</p>
-      //       <ItemCount contador/>
-        //     <hr/>
-        //</div>

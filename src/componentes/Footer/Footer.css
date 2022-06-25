@@ -13,10 +13,14 @@
     display: flex;
     width: 50%;
     justify-content: space-around;
-    align-items: center;
+    align-items: end;
 }
 .navLinkF {
     color: #C3ACE9;
     font-family: "Belleza";
-    font-size: 15px;
+    font-size: 2.5em;
+}
+
+.navLinkF:hover {
+    color: whitesmoke;
 }

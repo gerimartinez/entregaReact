@@ -1,5 +1,7 @@
 import "./Footer.css"
-import { Link } from "react-router-dom"
+import {BsInstagram} from "react-icons/bs"
+import { BsFacebook } from "react-icons/bs"
+import {HiMail} from "react-icons/hi"
 
 export const Footer = () => {
     return (
@@ -7,9 +9,15 @@ export const Footer = () => {
             <div className="divContainer">
                 <h1> </h1>
                 <nav className="footerNav">
-                    <Link to={"https://www.instagram.com/armon.studio/"} target="_blank" className="navLinkF">Instagram</Link>
-                    <Link to={"https://www.facebook.com/Armonstudio-112710430636869"} className="navLinkF">Facebook</Link>
-                    <Link to={"https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"} className="navLinkF">Email</Link>
+                    <a href="https://www.instagram.com/armon.studio/" target="_blank" className="navLinkF">
+                       <BsInstagram/>
+                    </a>
+                    <a href="https://www.facebook.com/Armonstudio-112710430636869" target="_blank" className="navLinkF">
+                        <BsFacebook/>
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" className="navLinkF">
+                      <HiMail/>    
+                    </a>
                 </nav>
             </div>
         </footer>

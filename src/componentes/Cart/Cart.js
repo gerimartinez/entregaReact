@@ -38,26 +38,26 @@ const Cart = () => {
                                 <img
                                 src={item.img} className="imgCart"/>
                             </div>
-                            <div class="col-md-3 col-lg-3 col-xl-3">
+                            <div class="col-md-2 col-lg-2 col-xl-2">
                                 <h6 className="text-muted">Modelo: {item.nombre}</h6>
                                 <h6 className="text-black mb-0">Cantidad: {item.cantidad}</h6>
                             </div>
-                            <div className="col-md-3 col-lg-3 col-xl-2 d-flex"> 
+                            <div className="col-md-3 col-lg-3 col-xl-2 d-flex text-muted"> 
                               ${item.precio}
                             </div>
-                            <div className="col-md-4 col-lg-4 col-xl-4">
+                            {/* <div className="col-md-4 col-lg-4 col-xl-4">
                                 <ItemCount
                                       max={item.max}
                                       contador={cantidad}
                                       setContador={setCantidad}
                                       onAdd={handleAgregar}
                                 />
-                            </div>
+                            </div> */}
                             <div className="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                              <h6 className="mb-0">${item.precio * item.cantidad}</h6>
+                              <h6 className="mb-0 text-black">${item.precio * item.cantidad}</h6>
                             </div>
                             <div className="col-md-2 col-lg-2 col-xl-2 text-end">
-                                <a href="#!" className="text-muted"><i className="fas fa-times"></i></a>
+                                <a href="#!" className="text-black"><i className="fas fa-times"></i></a>
                                 <button onClick={() => removeItem(item.id)} className="btn btn-danger"><HiOutlineTrash/></button>
                           </div>
                           

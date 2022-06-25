@@ -64,11 +64,13 @@
     color: black;
 }
 .btnFinalizar {
-    margin: 15px;
+    margin: 15px ;
     padding: 10px 10px;
     background-color: #C3ACE9;
     border-color: #C3ACE9;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    font-family: "Belleza";
+    width: 8.8em;
 }
 
 .btnFinalizar:hover {

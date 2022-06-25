@@ -58,7 +58,7 @@ export const ItemVendidos = () => {
                         <img src="./imagenes/mila.png" className="imgVendidos"></img>
                     </Link>
                     
-                    <h2>Mila</h2>
+                    <h2>MILA</h2>
                     <hr/>
                     <p className="precioProd">$3500</p>
                     <Link to={`/productos`} className="contBoton">
@@ -70,7 +70,7 @@ export const ItemVendidos = () => {
                     <Link to={`/item/upulPxWXopK0Eb4qChy2`}>
                         <img src="./imagenes/dolle.png" className="imgVendidos"></img>
                     </Link>
-                    <h2>Dolle</h2>
+                    <h2>DOLLE</h2>
                     <hr/>
                     <p className="precioProd">$3200</p>
                     <Link to={`/productos`} className="contBoton">
@@ -82,7 +82,7 @@ export const ItemVendidos = () => {
                     <Link to={`/item/nLSjCqVLoGPLxPu1MBX6`}>
                         <img src="./imagenes/estocolmo.png" className="imgVendidos"></img>
                     </Link>
-                    <h2>Estocolmo</h2>
+                    <h2>ESTOCOLMO</h2>
                     <hr/>
                     <p className="precioProd">$2800</p>
                     <Link to={`/productos`} className="contBoton">

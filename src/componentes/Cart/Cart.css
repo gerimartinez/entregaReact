@@ -96,8 +96,16 @@
     background-color: #eae8e8;
 }
 
-.title, .total {
+.title {
     font-family: "Belleza";
    color: #4C4352;
    padding: 1em;
+}
+
+.total {
+    font-family: "Belleza";
+    color: #4C4352;
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
 }
