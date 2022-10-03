@@ -16,6 +16,7 @@ function App() {
       <CartProvider>
         <AppRouter/>
       </CartProvider>
+      <h1>HOLAAAAAAAAAAAA</h1>
 
   </AuthProvider>
   );
